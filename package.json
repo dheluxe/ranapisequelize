@@ -1,0 +1,51 @@
+{
+  "name": "ranapisequelize",
+  "version": "0.0.1",
+  "description": "RAN Online API in NodeJS using Express, Sequelize and More",
+  "main": "api.js",
+  "scripts": {
+    "test": "nodemon ./api.js",
+    "dev": "nodemon ./api.js",
+    "start": "node ./api.js",
+    "sequelize:DB1:migrate": "sequelize --options-path ./db/.RanGame1 --env RanGame1 db:migrate",
+    "sequelize:DB1:migrate:undo": "sequelize --options-path ./db/.RanGame1 --env RanGame1 db:migrate:undo",
+    "sequelize:DB1:seed:all": "sequelize --options-path ./db/.RanGame1 --env RanGame1 db:seed:all",
+    "sequelize:DB2:migrate": "sequelize --options-path ./db/.RanLog --env RanLog db:migrate",
+    "sequelize:DB2:migrate:undo": "sequelize --options-path ./db/.RanLog --env RanLog db:migrate:undo",
+    "sequelize:DB2:seed:all": "sequelize --options-path ./db/.RanLog --env RanLog db:seed:all",
+    "sequelize:DB3:migrate": "sequelize --options-path ./db/.RanShop --env RanShop db:migrate",
+    "sequelize:DB3:migrate:undo": "sequelize --options-path ./db/.RanShop --env RanShop db:migrate:undo",
+    "sequelize:DB3:seed:all": "sequelize --options-path ./db/.RanShop --env RanShop db:seed:all",
+    "sequelize:DB4:migrate": "sequelize --options-path ./db/.RanUser --env RanUser db:migrate",
+    "sequelize:DB4:migrate:undo": "sequelize --options-path ./db/.RanUser --env RanUser db:migrate:undo",
+    "sequelize:DB4:seed:all": "sequelize --options-path ./db/.RanUser --env RanUser db:seed:all",
+    "sequelize:DB5:migrate": "sequelize --options-path ./db/.YXDB --env YXDB db:migrate",
+    "sequelize:DB5:migrate:undo": "sequelize --options-path ./db/.YXDB --env YXDB db:migrate:undo",
+    "sequelize:DB5:seed:all": "sequelize --options-path ./db/.YXDB --env YXDB db:seed:all"
+  },
+  "keywords": [
+    "RANONLINE",
+    "RANONLINEAPI"
+  ],
+  "author": "YeXiuPH (Christian Louis Abrigo)",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "json_encode": "^0.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mssql": "^7.1.3",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0",
+    "tedious": "^11.2.0"
+  }
+}
